@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+:root {
+  --bg: rgb(16, 16, 16);
+}
+
+.header {
+  height: 100px;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+
+.header > img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.header > div {
+  width: 100%;
+  margin-left: 4vmax;
+}
+
+.header > div > a {
+  margin: 2vmax;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: white;
+}
+
+.header > svg {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header > svg:hover {
+  color: rgb(216, 216, 216);
+}
+
+
+
+/* Style for the search container */
+.search-container {
+  position: relative;
+  width: 10px; /* Adjust as needed */
+  /* border: 1px solid red; */
+ 
+}
+
+/* Style for the search input */
+.search-container input[type="text"] {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Style for the search button */
+.search-container button {
+  position: absolute;
+  right: 60%;
+  top: 0;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Style for the search icon */
+.search-container button i {
+  color: #555;
+}
+.logout-conatiner{
+  
+  float: right;
+  position: relative;
+
+}
+.logout-conatiner button{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  /* width: 40px ; */
+  color: white;
+  font-size: 20px;
+  position:absolute;
+  padding: 10px 40px;
+  background-color: red;
+  border-radius: 6px;
+}
+/* spinner */
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #dbdcef;
+  border-right-color: #474bff;
+  animation: spinner-d3wgkg 1s infinite linear;
+}
+.spinner-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  background-color: rgba(0,0,0,.8);
+}
+
+@keyframes spinner-d3wgkg {
   to {
-    transform: rotate(360deg);
+     transform: rotate(1turn);
   }
+}
+.cardVideo{
+  width: 500px;
+      display: inline-block;
+      flex-direction: row;
+      flex-wrap: wrap;
+    
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+  border-radius: 8px;
+}
+
+.left-right{
+
+  display: flex;  
+  justify-content: space-between;
+}
+#left{
+  background-color:#555;
+  color: white;
+}
+.videodiv{
+  background-color: black;
 }

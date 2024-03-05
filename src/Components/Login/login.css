@@ -1,0 +1,301 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.signup-conatiner {
+  left: 0;
+  top: 0;
+  /* background-color: black; */
+  opacity: 0.8;
+  width: 100vw;
+  height: 160vh;
+  overflow: hidden;
+  background: url('../../netflix_background\ image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 2px solid red; */
+}
+
+.nav {
+  position: static;
+  padding: 10px 60px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.nav a img {
+  width: 180px;
+}
+
+.form-wrappers {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  border-radius: 8px;
+  padding: 70px;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .75);
+  /* border: 2px solid green; */
+  z-index: 10;
+}
+
+.form-wrappers h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.form-wrappers   form {
+  margin: 15px 0 55px;
+}
+
+form .form-controler {
+  height: 50px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.form-controler input {
+  height: 100%;
+  width: 90%;
+  background: #333;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+input[type='email']::placeholder {
+  padding: 20px;
+}
+
+input[type='password']::placeholder {
+  padding: 20px;
+}
+
+.btnlogin{
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1rem;
+  background: #e50914;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 25px 0 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+#Sign{
+  font-size: 20px;
+}
+#Sign:hover{
+  color: red;
+}
+form button:hover {
+  background: #c40812;
+}
+
+.form-wrappers a {
+  text-decoration: none;
+}
+
+.form-wrappers a:hover {
+  text-decoration: underline;
+}
+
+.form-wrappers :where(label, p, small, a) {
+  color: #b3b3b3;
+}
+
+form .form-help {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form .remember-me {
+  display: flex;
+}
+
+form .remember-me input {
+  margin-right: 5px;
+  accent-color: #b3b3b3;
+}
+
+form .form-help :where(label, a) {
+  font-size: 0.9rem;
+}
+
+.form-wrapper p a {
+  color: #fff;
+}
+
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+  color: #b3b3b3;
+}
+
+.form-wrapper small a {
+  color: #0071eb;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  top: 60%;
+  min-height: 375px;
+  background-color: black;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  opacity: .8;
+  /* border: 1px solid red; */
+
+
+
+}
+
+.footercon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80px;
+  background-color: transparent;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+
+.footer .flex1 {
+  color: #999;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 17px;
+  min-height: 30px;
+
+}
+
+.footer .flex1 h5 {
+  align-self: flex-start;
+}
+
+.list1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: center;
+  justify-content: center;
+  min-height: 50px;
+  font-size: 13px;
+  padding: 0px 70px;
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 13px;
+  margin: 7px -10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.list1 li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li a {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+}
+
+
+.footertxt {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+
+.language {
+  border: 1px solid white;
+  width: 8%;
+  padding: 15px;
+  position: relative;
+  right: 40%;
+
+
+
+  cursor: pointer;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.language>select {
+  outline: none;
+  border: none;
+}
+
+.language>i {
+  opacity: .7;
+  color: #555;
+}
+
+@media (max-width: 740px) {
+  body::before {
+    display: none;
+  }
+
+  nav,
+  .form-wrapper {
+    padding: 20px;
+  }
+
+  nav a img {
+    width: 140px;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    top: 43%;
+  }
+
+  .form-wrapper form {
+    margin: 25px 0 40px;
+  }
+}
