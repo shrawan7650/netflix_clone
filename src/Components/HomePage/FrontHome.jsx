@@ -27,7 +27,7 @@ const FrontHome = () => {
         </li>
         <button className="buttons">
           <Link id="link" to="/loginpage">
-            Login In
+            Login Now
           </Link>
         </button>
       </div>
