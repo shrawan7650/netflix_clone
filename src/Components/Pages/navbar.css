@@ -1,0 +1,162 @@
+.header {
+  height: 100px;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.header > img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.menu-bar-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar-item a {
+  margin-right: 20px;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__close {
+  display: none;
+}
+
+.search-container {
+  position: relative;
+  width: 60%;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.logout-conatiner {
+  position: relative;
+}
+
+.logout-conatiner button {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Sidebar CSS */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background-color: #333;
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.close-sidebar {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sidebar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

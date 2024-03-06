@@ -27,7 +27,7 @@ const FrontHome = () => {
         </li>
         <button className="buttons">
           <Link id="link" to="/loginpage">
-            Login Now
+            Login In
           </Link>
         </button>
       </div>
@@ -70,18 +70,18 @@ const FrontHome = () => {
         </div>
       </div>
       <hr className="hr"></hr>
-      <div className="container1">
+      <div className="container2">
         <div className="image">
           <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile.png" />
         </div>
-        <div className="text">
+        <div className="text2">
           <h1>Download your shows to watch on the go.</h1>
           <p>Save your data and watch all your favorites offline.</p>
         </div>
       </div>
       <hr className="hr"></hr>
-      <div className="container1">
-        <div className="text">
+      <div className="container3">
+        <div className="text3">
           <h1>Watch everywhere.</h1>
           <p>
             Stream unlimited movies and TV shows on <br />

@@ -1,6 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-.signup-conatiner {
+.signup-conatiner-login {
   left: 0;
   top: 0;
   /* background-color: black; */
@@ -30,7 +30,7 @@
   width: 180px;
 }
 
-.form-wrappers {
+.form-wrappers-login {
   position: absolute;
   left: 50%;
   top: 60%;
@@ -43,22 +43,22 @@
   z-index: 10;
 }
 
-.form-wrappers h2 {
+.form-wrappers-login h2 {
   color: #fff;
   font-size: 2rem;
 }
 
-.form-wrappers   form {
+.form-wrappers-login form {
   margin: 15px 0 55px;
 }
 
-form .form-controler {
+form .form-controler-login {
   height: 50px;
   position: relative;
   margin-bottom: 16px;
 }
 
-.form-controler input {
+.form-controler-login input {
   height: 100%;
   width: 90%;
   background: #333;
@@ -78,7 +78,7 @@ input[type='password']::placeholder {
   padding: 20px;
 }
 
-.btnlogin{
+.btnlogin {
   width: 100%;
   padding: 16px 0;
   font-size: 1rem;
@@ -92,29 +92,32 @@ input[type='password']::placeholder {
   cursor: pointer;
   transition: 0.1s ease;
 }
-#Sign{
+
+#Sign {
   font-size: 20px;
 }
-#Sign:hover{
+
+#Sign:hover {
   color: red;
 }
+
 form button:hover {
   background: #c40812;
 }
 
-.form-wrappers a {
+.form-wrappers-login a {
   text-decoration: none;
 }
 
-.form-wrappers a:hover {
+.form-wrappers-login a:hover {
   text-decoration: underline;
 }
 
-.form-wrappers :where(label, p, small, a) {
+.form-wrappers-login :where(label, p, small, a) {
   color: #b3b3b3;
 }
 
-form .form-help {
+form .form-help-login {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -133,21 +136,21 @@ form .form-help :where(label, a) {
   font-size: 0.9rem;
 }
 
-.form-wrapper p a {
+.form-wrapper-login p a {
   color: #fff;
 }
 
-.form-wrapper small {
+.form-wrapper-login small {
   display: block;
   margin-top: 15px;
   color: #b3b3b3;
 }
 
-.form-wrapper small a {
+.form-wrapper-login small a {
   color: #0071eb;
 }
 
-.footer {
+.footer-login {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -167,7 +170,7 @@ form .form-help :where(label, a) {
 
 }
 
-.footercon {
+.footercon-login {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -180,7 +183,7 @@ form .form-help :where(label, a) {
   /* border: 2px solid red; */
 }
 
-.footer .flex1 {
+.footer-login .flex1 {
   color: #999;
   justify-content: space-around;
   align-items: flex-start;
@@ -193,11 +196,11 @@ form .form-help :where(label, a) {
 
 }
 
-.footer .flex1 h5 {
+.footer-login .flex1 h5 {
   align-self: flex-start;
 }
 
-.list1 {
+.list1-login {
   color: white;
   display: flex;
   flex-direction: column;
@@ -212,7 +215,7 @@ form .form-help :where(label, a) {
   text-align: left;
 }
 
-.list1 li {
+.list1-login li {
   font-size: 13px;
   margin: 7px -10px;
   list-style-type: none;
@@ -226,7 +229,7 @@ form .form-help :where(label, a) {
   justify-content: center;
 }
 
-.list1 li a {
+.list1-login li a {
   color: #999;
   text-decoration: none;
   font-size: 14px;
@@ -249,7 +252,7 @@ li a {
 
 
 
-.language {
+.language-login {
   border: 1px solid white;
   width: 8%;
   padding: 15px;
@@ -266,36 +269,171 @@ li a {
 
 }
 
-.language>select {
+.language-login>select {
   outline: none;
   border: none;
 }
 
-.language>i {
+.language-login>i {
   opacity: .7;
   color: #555;
 }
 
-@media (max-width: 740px) {
-  body::before {
-    display: none;
-  }
-
-  nav,
-  .form-wrapper {
-    padding: 20px;
-  }
-
-  nav a img {
-    width: 140px;
-  }
-
-  .form-wrapper {
+@media screen and (max-width: 321px) {
+  .signup-conatiner-login {
+    opacity: 0.8;
     width: 100%;
-    top: 43%;
+    height: 160vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: url('../../netflix_background\ image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
   }
 
-  .form-wrapper form {
-    margin: 25px 0 40px;
+  .nav {
+    padding: 10px 20px;
+  }
+
+  .nav a {
+    width: 100px;
+    /* Adjust as needed */
+    left: 0;
+    /* Adjust as needed */
+  }
+
+  .form-wrappers {
+    border-radius: 8px;
+  position: absolute;
+
+   
+    background: rgba(0, 0, 0, .75);
+    border: 2px solid green;
+   
+    height: 50%;
+    margin: auto;
+  }
+  
+  .form-control input {
+
+    height: 100%;
+    width: 200%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 50px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .form-wrappers form {
+    margin: 15px 0 55px;
+  }
+
+  .form-controler {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  .form-controler input {
+    padding: 0 20px;
+    /* Adjust padding */
+  }
+
+  .btnlogin {
+    width: 100%;
+    margin-top: 30px;
+    /* Adjust margin */
+    left: 0;
+    /* Adjust as needed */
+  }
+
+  .form-help {
+    position: relative;
+    top: 0;
+    /* Adjust as needed */
+    left: 0;
+    /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust margin */
+    width: 100%;
+  }
+
+  .footer {
+    top: 90%;
+    min-height: 375px;
+    background-color: black;
+  }
+
+  .language {
+    display: none;
+    /* Hide language selector */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .signup-conatiner-login {
+    position: relative;
+    opacity: 0.8;
+    width: 100%;
+    height: 160vh;
+    overflow-x: hidden;
+    background: url('../../netflix_background\ image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav {
+    padding: 10px 20px;
+  }
+
+  .nav a img {
+    width: 100px; /* Adjust as needed */
+  }
+
+  .form-wrappers-login {
+    padding: 30px;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .75);
+  }
+
+  .form-wrappers-login h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .form-controler-login input {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .btnlogin {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    margin-top: 30px; /* Adjust margin */
+  }
+
+  .form-help-login a,
+  .form-wrapper-login p a {
+    font-size: 0.8rem; /* Adjust font size */
+  }
+
+  .footer-login {
+    top: 85%;
+    min-height: 375px;
+    background-color: black;
+  }
+
+  .language-login {
+    display: none; /* Hide the language selector */
   }
 }

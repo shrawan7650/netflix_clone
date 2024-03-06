@@ -112,3 +112,58 @@
 .card:hover {
   transform: translateY(-10px);
 }
+@media screen and (max-width: 321px) {
+  .home{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .banner {
+
+    
+    height: auto; /* Adjust height as needed for smaller screens */
+    padding: 2rem; /* Adjust padding for content */
+    /* border: 2px solid red; */
+  }
+
+  .banner h1,
+  .banner p {
+    font-size: 2rem; 
+    /* border: 1px solid black; */
+    width: 100%;/* Adjust font sizes for better readability */
+  }
+.banner >div{
+
+ 
+ display: flex;
+ justify-content: space-between;
+  /* border: 1px solid black; */
+}
+  .banner button {
+    width: 130px; /* Adjust button width */
+    font-size: 1rem; /* Adjust button font size */
+    padding: 0.5rem; /* Adjust padding for buttons */
+
+    /* border: 1px solid black; */
+  }
+
+  .row {
+    padding: 0.5rem; /* Adjust padding for rows */
+  }
+
+  .row>h2 {
+    font-size: 1.2rem; /* Adjust heading font size */
+  }
+
+  .card {
+    width: 150px; /* Adjust card width for better arrangement */
+  }
+
+  .card:hover {
+    transform: none; /* Remove the card transform effect on hover for mobile users */
+  }
+
+  .banner button svg {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin: 0 8px; /* Adjust margin around the icon */
+  }
+}

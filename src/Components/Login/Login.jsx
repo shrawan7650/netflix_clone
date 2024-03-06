@@ -33,16 +33,16 @@ const Login = () => {
   };
 
   return (
-    <div className="signup-conatiner">
+    <div className="signup-conatiner-login">
       <div className="nav">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
       </div>
-      <div class="form-wrappers">
+      <div class="form-wrappers-login">
         <h2>Login In</h2>
         <form onSubmit={sumbitHandler}>
-          <div className="form-controler">
+          <div className="form-controler-login">
             <input
               type="text"
               name="email"
@@ -50,7 +50,7 @@ const Login = () => {
               onChange={changeHandler}
             />
           </div>
-          <div className="form-controler">
+          <div className="form-controler-login">
             <input
               type="password"
               name="password"
@@ -61,7 +61,7 @@ const Login = () => {
           <button type="submit" className="btnlogin">
             Login In
           </button>
-          <div className="form-help">
+          <div className="form-help-login">
             <div className="remember-me">
               <input type="checkbox" id="remember-me" />
               <label for="remember-me">Remember me</label>
@@ -92,8 +92,8 @@ const Login = () => {
           )}
         </small>
       </div>
-      <div className="footer">
-        <div className="footercon">
+      <div className="footer-login">
+        <div className="footercon-login">
           <div className="flex1">
             <h5>Questions? Call 1-866-579-7172</h5>
           </div>
@@ -159,7 +159,7 @@ const Login = () => {
             </li>
           </ul>
         </div>
-        <div className="language">
+        <div className="language-login">
           <i className="fa fa-search"></i>
 
           <select name="cars" id="cars">

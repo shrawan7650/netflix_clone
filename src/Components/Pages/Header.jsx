@@ -1,34 +1,33 @@
 import React, { useState } from "react";
 import logo from "../../logo.png";
 import { Link, useNavigate } from "react-router-dom";
-import { toast, Bounce } from 'react-toastify';
-
+import { IoClose, IoMenu } from "react-icons/io5";
 const Header = () => {
   const [inputData, setInputData] = useState("");
+  const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate("/home");
   };
-const logoutHandler = ()=>{
-  toast.success('Logout Successfully', {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    transition: Bounce
-    });
-  navigate('/')
-}
+  const logoutHandler = () => {
+    navigate("/");
+  };
 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const closeMenuOnMobile = () => {
+    if (window.innerWidth <= 1150) {
+      setShowMenu(false);
+    }
+  };
 
   return (
     <nav className="header">
       <img src={logo} alt="logo" onClick={handleClick} />
-      <div>
+      <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
         <Link to="/tvshows">TV Shows</Link>
         <Link to="/movies">Movies</Link>
         <Link to="/recent">Recently Added</Link>
@@ -39,16 +38,15 @@ const logoutHandler = ()=>{
           type="text"
           placeholder="Search..."
           value={inputData}
-          onChange={(event)=>setInputData(event.target.value)}
+          onChange={(event) => setInputData(event.target.value)}
         />
-        <button type="submit" onClick={()=>setInputData("")}>
+        <button type="submit" onClick={() => setInputData("")}>
           <i className="fa fa-search"></i>
         </button>
         <div className="logout-conatiner">
-        <button onClick={logoutHandler} >Logout</button>
+          <button onClick={logoutHandler}>Logout</button>
+        </div>
       </div>
-      </div>
-      
     </nav>
   );
 };

@@ -33,30 +33,30 @@ a {
   /* border: 1px solid green; */
 }
 
-.header > img {
+.header>img {
   height: 100%;
   cursor: pointer;
 }
 
-.header > div {
+.header>div {
   width: 100%;
   margin-left: 4vmax;
 }
 
-.header > div > a {
+.header>div>a {
   margin: 2vmax;
   font-size: 1.3rem;
   font-weight: 300;
   color: white;
 }
 
-.header > svg {
+.header>svg {
   color: white;
   font-size: 2rem;
   cursor: pointer;
 }
 
-.header > svg:hover {
+.header>svg:hover {
   color: rgb(216, 216, 216);
 }
 
@@ -65,9 +65,10 @@ a {
 /* Style for the search container */
 .search-container {
   position: relative;
-  width: 10px; /* Adjust as needed */
+  width: 10px;
+  /* Adjust as needed */
   /* border: 1px solid red; */
- 
+
 }
 
 /* Style for the search input */
@@ -95,24 +96,27 @@ a {
 .search-container button i {
   color: #555;
 }
-.logout-conatiner{
-  
+
+.logout-conatiner {
+
   float: right;
   position: relative;
 
 }
-.logout-conatiner button{
+
+.logout-conatiner button {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   /* width: 40px ; */
   color: white;
   font-size: 20px;
-  position:absolute;
+  position: absolute;
   padding: 10px 40px;
   background-color: red;
   border-radius: 6px;
 }
+
 /* spinner */
 
 .spinner {
@@ -124,7 +128,8 @@ a {
   border-right-color: #474bff;
   animation: spinner-d3wgkg 1s infinite linear;
 }
-.spinner-container{
+
+.spinner-container {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -133,35 +138,205 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 20;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
 }
 
 @keyframes spinner-d3wgkg {
   to {
-     transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
-.cardVideo{
+
+.cardVideo {
   width: 500px;
-      display: inline-block;
-      flex-direction: row;
-      flex-wrap: wrap;
-    
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   margin: 0.3rem;
   cursor: pointer;
   transition: transform 0.5s;
   border-radius: 8px;
 }
 
-.left-right{
+.left-right {
 
-  display: flex;  
+  display: flex;
   justify-content: space-between;
 }
-#left{
-  background-color:#555;
+
+#left {
+  background-color: #555;
   color: white;
 }
-.videodiv{
+
+.videodiv {
   background-color: black;
+}
+
+@media screen and(max-width:420px) {
+
+  h2 {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  :root {
+    --bg: rgb(16, 16, 16);
+  }
+
+  .header {
+    height: 100px;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+  }
+
+  .header>img {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .header>div {
+    width: 100%;
+    margin-left: 4vmax;
+  }
+
+  .header>div>a {
+    margin: 2vmax;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+  }
+
+  .header>svg {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .header>svg:hover {
+    color: rgb(216, 216, 216);
+  }
+
+
+
+  /* Style for the search container */
+  .search-container {
+    position: relative;
+    width: 10px;
+    /* Adjust as needed */
+    /* border: 1px solid red; */
+
+  }
+
+  /* Style for the search input */
+  .search-container input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  /* Style for the search button */
+  .search-container button {
+    position: absolute;
+    right: 60%;
+    top: 0;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Style for the search icon */
+  .search-container button i {
+    color: #555;
+  }
+
+  .logout-conatiner {
+
+    float: right;
+    position: relative;
+
+  }
+
+  .logout-conatiner button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 40px ; */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding: 10px 40px;
+    background-color: red;
+    border-radius: 6px;
+  }
+
+  /* spinner */
+
+  .spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: #dbdcef;
+    border-right-color: #474bff;
+    animation: spinner-d3wgkg 1s infinite linear;
+  }
+
+  .spinner-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  @keyframes spinner-d3wgkg {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .cardVideo {
+    width: 500px;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 8px;
+  }
+
+  .left-right {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #left {
+    background-color: #555;
+    color: white;
+  }
+
+  .videodiv {
+    background-color: black;
+  }
 }

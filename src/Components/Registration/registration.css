@@ -161,3 +161,179 @@ form .form-help :where(label, a) {
 #learn-more > a{
   cursor: pointer;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  top: 60%;
+  min-height: 375px;
+  background-color: black;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  opacity: .8;
+  /* border: 1px solid red; */
+
+
+
+}
+
+.footercon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80px;
+  background-color: transparent;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+
+.footer.flex1 {
+  color: #999;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 17px;
+  min-height: 30px;
+
+}
+
+.footer .flex1 h5 {
+  align-self: flex-start;
+}
+
+.list1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: center;
+  justify-content: center;
+  min-height: 50px;
+  font-size: 13px;
+  padding: 0px 70px;
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 13px;
+  margin: 7px -10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.list1 li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li a {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+}
+
+
+.footertxt {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+
+.language {
+  border: 1px solid white;
+  width: 8%;
+  padding: 15px;
+  position: relative;
+  right: 40%;
+
+
+
+  cursor: pointer;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.language>select {
+  outline: none;
+  border: none;
+}
+
+.language-login>i {
+  opacity: .7;
+  color: #555;
+}
+
+@media screen and (max-width: 320px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .form-wrapper {
+    padding: 30px; /* Adjust padding for the form */
+    width: 90%; /* Make the form slightly narrower */
+  }
+
+  .form-control input {
+    font-size: 0.9rem; /* Reduce font size for inputs */
+  }
+
+  form button {
+    width: 100%; /* Make the button full width */
+    font-size: 1rem; /* Adjust font size */
+    padding: 12px 0; /* Adjust button padding */
+  }
+
+  .footercon {
+    flex-direction: column; /* Stack footer items vertically */
+  }
+
+  .footer .flex1 h5 {
+    margin-bottom: 10px; /* Adjust margin for the header */
+  }
+
+  .list1 {
+    padding: 0 20px; /* Adjust padding for the list items */
+  }
+
+  .list1 li {
+    margin: 5px 0; /* Adjust margin for each list item */
+  }
+
+  .list1 li a {
+    font-size: 12px; /* Reduce font size for footer links */
+  }
+
+  .language {
+    width: 100%; /* Make the language dropdown full width */
+    padding: 10px 0; /* Adjust padding for the language dropdown */
+    justify-content: center; /* Center the language dropdown */
+  }
+}
